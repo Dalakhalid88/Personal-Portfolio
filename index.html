@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dala Khaled Al-Aboudi — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --card: #f8f9fb;
+      --muted: #6b7280;
+      --fg: #1f2937;
+      --accent: #6da7c9;
+      --accent-light: #fceff4;
+      --radius: 16px;
+      --shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg);
+      color: var(--fg);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    header {
+      background-color: var(--accent-light);
+      box-shadow: var(--shadow);
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 16px 0;
+      font-weight: 600;
+    }
+
+    .navbar a {
+      color: var(--fg);
+      transition: 0.2s;
+    }
+
+    .navbar a:hover {
+      color: var(--accent);
+    }
+
+    .container {
+      width: min(1100px, 90%);
+      margin: 0 auto;
+      padding: 40px 0;
+    }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 40px;
+      padding: 60px 0;
+    }
+
+    .hero-text {
+      flex: 1;
+    }
+
+    .hero-text h1 {
+      font-size: 36px;
+      margin-bottom: 6px;
+    }
+
+    .hero-text p {
+      font-size: 18px;
+      color: var(--muted);
+    }
+
+    .hero-img {
+      flex: 1;
+    }
+
+    .hero-img img {
+      max-width: 100%;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .section {
+      padding: 50px 0;
+    }
+
+    .section-title {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .card {
+      background: var(--card);
+      padding: 24px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 16px;
+    }
+
+    .chip {
+      background: var(--accent-light);
+      padding: 10px 14px;
+      border-radius: 999px;
+      text-align: center;
+      font-weight: 500;
+    }
+
+    footer {
+      background: var(--accent-light);
+      padding: 20px 0;
+      text-align: center;
+      color: var(--muted);
+      font-size: 14px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
+    </nav>
+  </header>
+
+  <main class="container">
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Dala Khaled Al-Aboudi</h1>
+        <p>Computer Science Student</p>
+      </div>
+      <div class="hero-img">
+        
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <h2 class="section-title">About Me</h2>
+      <div class="card">
+        <p>I’m a curious and ambitious Computer Science student at Qassim University, expected to graduate in January 2026.</p>
+        <p>Currently exploring areas like data analysis, AI, cloud computing, and software development. I'm seeking a cooperative training opportunity to gain hands-on experience, explore my professional interests, and grow through real-world challenges.</p>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills">
+        <div class="chip">Python</div>
+        <div class="chip">Java</div>
+        <div class="chip">C</div>
+        <div class="chip">C++</div>
+        <div class="chip">Excel</div>
+        <div class="chip">Power BI</div>
+        <div class="chip">Data Analysis</div>
+        <div class="chip">Problem Solving</div>
+        <div class="chip">Game Logic</div>
+        <div class="chip">AI Fundamentals</div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <h2 class="section-title">My Projects</h2>
+      <div class="card">
+        <p>Explore my coding projects on GitHub:</p>
+        <a href="https://github.com/Dalakhalid88" target="_blank">github.com/Dalakhalid88</a>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section class="section" id="certifications">
+      <h2 class="section-title">Certifications</h2>
+      <div class="card">
+        <ul>
+          <li><a href="https://learn.microsoft.com/en-us/users/dalakhalid-7882/achievements/print/w2f7s2xn?tab=tab-learning-paths" target="_blank">Data Analysis Fundamentals with Power BI – Microsoft Learn</a></li>
+          <li><a href="https://www.credly.com/badges/71f2774b-7779-4038-9920-bbec0c325c4c" target="_blank">AI Fundamentals – IBM SkillsBuild</a></li>
+          <li><a href="https://www.credly.com/badges/2f1f7ec4-5b96-4c32-bca2-a5fac57c2a0c" target="_blank">AI Fundamentals with Capstone Project – IBM SkillsBuild</a></li>
+          <li>Game Development Bootcamp – Tekvers</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <h2 class="section-title">Contact Information</h2>
+      <div class="card">
+        <p>Email: <a href="mailto:Dalakhalid88@outlook.com">Dalakhalid88@outlook.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/dala-khalid/" target="_blank">linkedin.com/in/dala-khalid</a></p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    © <span id="year"></span> Dala Khaled Al-Aboudi — All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
